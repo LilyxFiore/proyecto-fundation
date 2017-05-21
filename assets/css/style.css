@@ -1,11 +1,11 @@
 @font-face{
   font-family: Neutra;
-  src: url("../fonts/neutra-book.woft2")
+  src: url("../fonts/neutra-book.woff2")
 }
 
 @font-face{
   font-family: Neutra;
-  src: url("../fonts/neutra-bold.woft2")
+  src: url("../fonts/neutra-bold.woff2")
   font-weight:bold;
 }
 
