@@ -12,3 +12,86 @@
 *{
   font-family: Neutra, Helvetica, sans-serif;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 0px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+ul{
+	display: none !important;
+}
+
+/*SLIDER 1*/
+
+section{
+  padding: 20px;
+	
+}
+h2{
+	
+	margin: 0px;
+	font-size: 16px;
+	width: 90%;
+    margin: 0px auto;
+}
+.text-left{
+	text-align: left;
+}
+
+/* Arrows */
+.fa-angle-left,
+.fa-angle-right
+{
+    position: absolute;
+    top: 50%;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.fa-angle-left:before,
+.fa-angle-right:before
+{
+   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-angle-left
+{
+    left: -25px;
+}
+
+
+.fa-angle-right
+{
+    right: -25px;
+}
+
+
