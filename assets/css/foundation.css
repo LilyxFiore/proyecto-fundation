@@ -455,12 +455,12 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 .map_canvas img,
 .map_canvas embed,
@@ -860,7 +860,7 @@ textarea[readonly] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 input[type='search'] {
   box-sizing: border-box; }
@@ -991,7 +991,7 @@ select {
      -moz-appearance: none;
           appearance: none;
   border: 1px solid #cacaca;
-  border-radius: 3px;
+  border-radius: 0px;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 1rem;
@@ -1219,7 +1219,7 @@ select {
     background-color: #222222;
     color: #fefefe; }
     .button.body-font:hover, .button.body-font:focus {
-      background-color: #1b1b1b;
+      background-color: #414141;
       color: #fefefe; }
   .button.header {
     background-color: #222222;
@@ -2126,7 +2126,7 @@ select {
 
 .title-bar {
   padding: 0.5rem;
-  background: #0a0a0a;
+  background: #333;
   color: #fefefe;
   display: -ms-flexbox;
   display: flex;
@@ -2340,14 +2340,12 @@ select {
     top: 50%;
     right: 1rem;
     margin-top: -0.5rem;
-    content: '+'; }
+    content: ''; }
   .is-active > .accordion-title::before {
-    content: '\2013'; }
+    content: ''; }
 
 .accordion-content {
   display: none;
-  padding: 1rem;
-  border: 1px solid #e6e6e6;
   border-bottom: 0;
   background-color: #fefefe;
   color: #0a0a0a; }

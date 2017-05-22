@@ -14,59 +14,101 @@
 
 
   <button type="button" class="button alert" data-toggle="offCanvasRight">
-    <span>Add to Bag</span>
+    <span>Add to Bag y</span>
   </button>
 
   <div>
-    <img src="assets/img/slider1-img14.png" alt="">
+    <img src="assets/img/slider1-img14.png" alt="" class="img-product">
+  </div>
+  <div>
+    <img src="assets/img/slider1-img15.png" alt="" class="img-product">
   </div>
 
   <!--My bag-->
   <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
-    <div class="checkout-summary">
-      <div class="checkout-summary-title">
-        <h5>Your Order</h5>
-        <h5>2 Items</h5>
+    <div class="my-bag">
+      <div class="title-bar">
+        <a class="fa fa-angle-right fa-2x white" data-toggle="offCanvasRight"></a>
+        <span class="f-24">My Bag</span>
+        <div></div>
       </div>
 
-      <div class="checkout-summary-item">
-        <img src="https://placeimg.com/100/80/any">
+      <div class="my-bag-item">
+        <img src="assets/img/slider1-img22.png" class="item-img">
         <div class="item-name">
           <a>Comfy Knit Blazer</a>
-          <p><span class="title">Color: </span>Blue</p>
-          <p><span class="title">Size: </span>M</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <p class="f-12">Estimated Arrival <span class="green">Jun.20 - Jul. 19</span></p>
         </div>
-        <div class="item-price">
-          <p class="title">$24.99</p>
-          <a href="#">Remove</a>
+
+        <div class="item-price text-right">
+          <a href="#" class="fa fa-trash-o"></a>
+          <p class="title">$64.79</p>
         </div>
       </div>
-      <div class="checkout-summary-item">
-        <img src="https://placeimg.com/100/80/any">
+
+      <div class="my-bag-item">
+        <img src="assets/img/slider1-img22.png" class="item-img">
         <div class="item-name">
           <a>Comfy Knit Blazer</a>
-          <p><span class="title">Color: </span>Blue</p>
-          <p><span class="title">Size: </span>M</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <p class="f-12">Estimated Arrival <span class="green">Jun.20 - Jul. 19</span></p>
         </div>
-        <div class="item-price">
-          <p class="title">$24.99</p>
-          <a href="#">Remove</a>
-        </div>
-      </div>
-      <div class="checkout-summary-details">
-        <div class="left">
-          <p><strong>Subtotal:</strong></p>
-          <p><strong>Tax:</strong></p>
-          <p><strong>Total:</strong></p>
-        </div>
-        <div class="right">
-          <p>$10.99</p>
-          <p>$2.00</p>
-          <p>$12.99</p>
+
+        <div class="item-price text-right">
+          <a href="#" class="fa fa-trash-o"></a>
+          <p class="title">$64.79</p>
         </div>
       </div>
-      <button class="button expanded">Proceed to Checkout</button>
+
+      <ul class="accordion summary" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#deeplink1" class="accordion-title p-10">Order Summary
+            <span class="fa fa-angle-double-up fa-lg float-right"></span>
+          </a>
+          <div class="accordion-content" data-tab-content id="deeplink1">
+            <ul>
+              <li>Subtotal:
+                <span class="float-right">$10.9</span>
+              </li>
+              <li>Estimated Shipping Free:
+                <span class="float-right green"><i>Free</i></span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="p-10">Total:
+          <span class="float-right">$10.9</span>
+        </li>
+        <li class="p-10">
+          <button class="button body-font btn-checkout">Checkout
+            <i class="fa fa-angle-right m-left"></i>
+          </button>
+        </li>
+      </ul>
+
+
     </div>
+  </div>
+
+
+  <div class="callout" data-closable>
+    <p>You can so totally close this!</p>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 
 

@@ -9,29 +9,42 @@
   font-weight:bold;
 }
 
-*{
+*,body, html, h1, h2, h3, h4, h5, h6, ul, li{
   font-family: Neutra, Helvetica, sans-serif;
+}
+
+.f-24{
+  font-size: 24px;
+}
+
+.f-12{
+  font-size: 12px;
+}
+
+.white{
+  color: white;
+}
+
+.green{
+  color: #179b7f;
+}
+
+.black{
+  color: #333;
 }
 
 /** Style My Bag**/
 
-.checkout-summary {
-  max-width: 500px;
+.btn{
+  background-color: #171717;
+}
+
+.my-bag {
+  height: 100%;
   background-color: #fefefe;
 }
 
-.checkout-summary-title {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid #e6e6e6;
-}
-
-.checkout-summary-item {
+.my-bag-item {
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
   display: -webkit-flex;
@@ -44,29 +57,87 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.checkout-summary-item .item-name,
-.checkout-summary-item .item-price {
-  padding: 0 1rem;
+.my-bag-item .item-img{
+  width: 82px;
+  height: 82px;
 }
 
-.checkout-summary-item .item-name p,
-.checkout-summary-item .item-price p {
+.my-bag-item .item-name,
+.my-bag-item .item-price {
+  padding: 0 12px;
+  font-size: 16px;
+}
+
+.my-bag-item .item-name a, .my-bag-item .item-price a{
+  color: #333333;
+}
+
+.my-bag-item .item-name select{
+  margin: 10px 0;
+  width: 60px;
+  height: 32px;
+  font-size: 12px;
+  border: 1px solid #333;
+}
+
+.my-bag-item .item-price a{
+  font-size: 12px;
+}
+
+.my-bag-item .item-price a:hover{
+  color: red;
+}
+
+.my-bag-item .item-name p,
+.my-bag-item .item-price p {
   margin: 0;
   padding: 0;
 }
 
-.checkout-summary-item .title {
+.my-bag-item .title {
   font-weight: bold;
 }
 
-.checkout-summary-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid #e6e6e6;
-  border-top: none;
+.summary{
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.summary ul{
+  padding: 0;
+  margin: 0;
+}
+
+.summary li{
+  border: 1px solid #e1e1e1;
+  list-style: none;
+}
+
+.summary li > a{
+  color: #333;
+  background-color: white;
+  padding: 10px;
+}
+
+.summary ul>li{
+  padding: 10px;
+}
+
+.btn-checkout{
+  padding: 18px;
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.m-left{
+  margin-left: 4px;
+}
+
+.p-10{
+  padding: 10px;
 }
