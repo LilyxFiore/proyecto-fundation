@@ -391,3 +391,29 @@ h4{
 .btn-continue:hover{
   background-color: rgb(41, 37, 37);
 }
+
+/*********************css galeria*************************/
+.img-producto{
+  height: 570px;
+}
+.grilla-img{
+  margin-bottom: 20px;
+}
+
+/********************clases detalle producto*************************/
+.detalle-producto{
+  width: 505px;
+  height: 506px;
+}
+.img-min-product{
+  width: 70px;
+  height: 70px;
+}
+.product-btn {
+    margin-top: 10px;
+    padding: 9px 23px;
+    background-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+}
