@@ -1,6 +1,5 @@
 var listImg = document.getElementsByClassName("img-product");
 var MyBagItem = document.getElementById("myBag").firstChild;
-console.log(MyBagItem);
 
 for(i = 0; i < listImg.length; i++){
   listImg[i].addEventListener("click", function(){
@@ -20,13 +19,15 @@ function createBagItem(srcImg,i){
   var aTrash = document.createElement("a");
   var price = document.createElement("p");
 
+  var firstChild = myBag.getElementsByTagName('div')[0];
+
   divItem.setAttribute("class","my-bag-item");
   img.src=srcImg;
   img.setAttribute("class","item-img");
 
   divName.setAttribute("class","item-name");
 
-  aName.appendChild(document.createTextNode("Product number"+i));
+  aName.appendChild(document.createTextNode("Product number  "+i));
 
   p.setAttribute("class","f-12");
   p.appendChild(document.createTextNode("Estimated Arrival"));
@@ -36,8 +37,14 @@ function createBagItem(srcImg,i){
 
   itemPrice.setAttribute("class",'item-price text-right');
   aTrash.setAttribute("class", 'fa fa-trash-o');
+
+  aTrash.addEventListener("click", function() {
+    myBag.removeChild(divItem);
+  })
+
   price.setAttribute("class", "title");
-  price.innerHTML="$"+ 90 + Number(i);
+  var num = 90.05 + i;
+  price.innerHTML="$"+ num;
 
   itemPrice.appendChild(aTrash);
   itemPrice.appendChild(price);
@@ -45,11 +52,12 @@ function createBagItem(srcImg,i){
   divItem.appendChild(img);
   divItem.appendChild(divName);
   divName.appendChild(aName);
-  createOption(select);
   divName.appendChild(select);
+  createOption(select);
+
   divName.appendChild(p);
   divItem.appendChild(itemPrice);
-  myBag.appendChild(divItem);
+  document.getElementById('myBag').insertBefore(divItem, firstChild);
 }
 
 function createOption(select, divName){
