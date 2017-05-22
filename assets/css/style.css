@@ -139,6 +139,35 @@ img[alt="logo"]{
 ul.menu-inf {
    border-color: black;
 }
+/*HAMBURGER RESPONSIVE*/
+@media(min-width: 500px){
+  .hambur{
+  display: block;
+  }
+  header{
+    display: none;
+  }
+ 
+}
+
+@media (min-width: 768px){
+  .hambur{
+    display: none;
+  }
+  header{
+    display: block;
+  }
+
+}
+@media screen and (max-width:860px){
+    .menu-inf a{
+        font-size:14px;
+    }  
+}
+
+
+/*SLIDER SECTION*/
+
 .slider-buy {
     width: 80%;
     margin: 0px auto;
