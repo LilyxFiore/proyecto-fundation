@@ -34,10 +34,73 @@ html, body {
 .slick-slide img {
   width: 100%;
 }
-
+/*Slick hidden dots
 ul{
 	display: none !important;
+}*/
+/*HEADER*/
+.head-up-bg{
+  overflow: auto;
+  background-color: black;
+  padding: 5px 0;
 }
+.menu-sup, .menu-md, .menu-inf{
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.float-left a, .float-right a{
+  color: white;
+  font-size: 13px;
+
+}
+.float-left a:hover, .float-right a:hover{
+  text-decoration: underline;
+}
+.float-right img{
+  width: 18px;
+  height: 18px;
+  margin-right: 0 8px ;
+}
+
+#header-middle{
+  margin:20px 0;  
+}
+img[alt="logo"]{
+  height: 39px;
+  width: 99px;
+  /*vertical-align: middle;*/
+}
+.search{
+  position: relative;
+}
+.fa-search{
+  position: absolute;
+  z-index: 20;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.menu-md .float-right a{
+  color: #9b9b9b;
+  font-size: 16px;
+}
+.fa-smile-o{
+  color: black;
+
+}
+.menu-inf a{
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+ 
+  margin-right: 60px;
+}
+ul.menu-inf {
+   border-color: black;
+}
+
+
 
 /*SLIDER 1*/
 
