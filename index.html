@@ -15,226 +15,240 @@
   <body>
 
     <header>
-      <div>
-        <div id="header-up">
-          <div class="container">
-            <div class="head-up-bg">
-              <div class="menu-sup">
-                <div class="float-left">
-                  <a href="">FREE SHIPPING on orders above $75*</a>
-                </div>
-                <div class="float-right">
-                  <a>
-                    <span>Ship To:</span>
-                    <img src="assets/img/us.png" alt="USA">
-                  </a>
-                  <a>
-                    <span class="fa fa-envelope fa-lg"></span>
-                    <span>Email Us</span>
-                  </a>
-                </div>
+       <div id="header-up">
+        <div class="container">
+          <div class="head-up-bg">
+            <div class="menu-sup">
+              <div class="float-left">
+                <a href="">FREE SHIPPING on orders above $75*</a>
+              </div>
+              <div class="float-right">
+                <a>
+                  <span>Ship To:</span>
+                  <img src="assets/img/us.png" alt="USA">
+                </a>
+                <a>
+                  <span class="fa fa-envelope fa-lg"></span>
+                  <span>Email Us</span>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="header-middle">
-          <div class="container">
-            <div class="head-md-bg">
-              <div class="menu-md">     
-
-                <a class="float-left" href=""><img src="assets/img/fab_logo_3_0.png" alt="logo"></a> 
-                <div class="float-left "> 
-                  <div class="happy-face">
-                    <i class="fa fa-search " aria-hidden="true"></i>
-                    <i class="fa fa-smile-o fa-lg" aria-hidden="true" ></i>     
-                    <input class="search" type="text">                    
-                  </div>                 
-                </div>   
-                <div class="float-right">
-                  <a href="">Fab Insider |</a>
-                  <a href="">Registry |</a>
-                  <a href=""><span class="fa fa-unlock-alt fa-lg"></span></a>
-                  <a href="">Login</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="header-down">
-          <div class="container">
-            <ul class="menu-inf">
-              <a  href=""><li>NEW ARRIVALS</li><li class="gray">|</li></a>
-              <a href=""><li>ART</li><li class="gray">|</li></a>
-              <a href=""><li>HOME</li><li class="gray">|</li></a>
-              <a href=""><li>WOMEN</li><li class="gray">|</li></a>
-              <a href=""><li>MEN</li><li class="gray">|</li></a>
-              <a href=""><li>TECH</li><li class="gray">|</li></a>
-              <a href=""><li>FUN</li><li class="gray">|</li></a>
-              <a href=""> <li>FEATURED DESIGNERS</li><li class="gray">|</li></a>
-              <a href=""><li>BOUTIQUES</li><li class="gray">|</li></a>
-              <a href=""><li>BLOG</li></a>
-            </ul>
           </div>
         </div>
       </div>
+
+      <!--MENU RESPONSIVE-->
+        <div class="off-canvas-wrapper">
+          <div class="off-canvas-wrapper" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="movil-menu" data-off-canvas>
+            <ul class="menu vertical menu-left">
+              <li><a  href="">Sign in</a></li>
+              <li><a href="">New Arrival</a></li>
+              <li>
+                <a href="">Art<span class="plus">+</span></a>
+              </li>
+              <li><a href="">Home <span class="plus">+</span></a></li>
+              <li><a href="">Women <span class="plus">+</span></a></li>
+              <li><a href="">Men <span class="plus">+</span></a></li>
+              <li><a href="">Tech <span class="plus">+</span></a></li>
+              <li><a href="">Fun <span class="plus">+</span></a></li>
+              <li><a href="">Features <span class="plus">+</span></a></li>
+              <li>
+                <a href="">Fab Insider</a>
+                <div class="new">NEW</div>
+              </li>
+              <li><a href="">Registry</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+
+              <div class="title-bar show-for-small-only">
+                <div class="title-bar-left ">
+                  <button class="menu-icon dark " type="button" data-open="movil-menu"></button>
+                  <span class="title-bar-title">
+                    <a href=""><img src="assets/img/fab_logo_3_0.png" alt="logo-movil"></a>
+                    <div class="move-right">
+                     <i class="fa fa-search fa-lg icon-responsive" aria-hidden="true"></i>
+                    <i class="fa fa-unlock-alt fa-lg icon-responsive" aria-hidden="true"></i>
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <nav class="hide-for-small-only  nav-desktop">
+                <div class="wrap">
+                  <div id="header-middle">
+                    <div class="container">
+                      <div class="head-md-bg">
+                        <div class="menu-md">     
+
+                          <a class="float-left" href=""><img src="assets/img/fab_logo_3_0.png" alt="logo"></a> 
+                          <div class="float-left "> 
+                            <div class="happy-face">
+                              <i class="fa fa-search " aria-hidden="true"></i>
+                              <i class="fa fa-smile-o fa-lg" aria-hidden="true" ></i>     
+                              <input class="search" type="text">                    
+                            </div>                 
+                          </div>   
+                          <div class="float-right">
+                            <a href="">Fab Insider |</a>
+                            <a href="">Registry |</a>
+                            <a href=""><span class="fa fa-unlock-alt fa-lg"></span></a>
+                            <a href="">Login</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="header-down">
+                    <div class="container">
+                      <ul class="menu-inf">
+                        <a  href=""><li>NEW ARRIVALS</li><li class="gray">|</li></a>
+                        <a href=""><li>ART</li><li class="gray">|</li></a>
+                        <a href=""><li>HOME</li><li class="gray">|</li></a>
+                        <a href=""><li>WOMEN</li><li class="gray">|</li></a>
+                        <a href=""><li>MEN</li><li class="gray">|</li></a>
+                        <a href=""><li>TECH</li><li class="gray">|</li></a>
+                        <a href=""><li>FUN</li><li class="gray">|</li></a>
+                        <a href=""> <li>FEATURED DESIGNERS</li><li class="gray">|</li></a>
+                        <a href=""><li>BOUTIQUES</li><li class="gray">|</li></a>
+                        <a href=""><li>BLOG</li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>             
+
+            </div>
+          </div>
+        </div>
+
+
+
+    
     </header>
-<!--MENU RESPONSIVE-->
-    <div class="title-bar hambur">
-        <div class="title-bar-left">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft" data-toggle = "zebra"></button>
-        <span class="title-bar-title">Foundation</span>
 
 
-        <div class="row column">
-          <div class="off-canvas-wrapper">
-          <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-            <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-        
-            <ul class="menu-inf menu vertical">
-              <a  href=""><li>NEW ARRIVALS</li><li class="gray">|</li></a>
-              <a href=""><li>ART</li><li class="gray">|</li></a>
-              <a href=""><li>HOME</li><li class="gray">|</li></a>
-              <a href=""><li>WOMEN</li><li class="gray">|</li></a>
-              <a href=""><li>MEN</li><li class="gray">|</li></a>
-              <a href=""><li>TECH</li><li class="gray">|</li></a>
-              <a href=""><li>FUN</li><li class="gray">|</li></a>
-              <a href=""> <li>FEATURED DESIGNERS</li><li class="gray">|</li></a>
-              <a href=""><li>BOUTIQUES</li><li class="gray">|</li></a>
-              <a href=""><li>BLOG</li></a>
-            </ul>
-
-      <!-- Your menu or Off-canvas content goes here -->
-              </div>
-
-            </div>
-
-<div class="off-canvas-content" data-off-canvas-content></div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </div>
 <!--SLIDER-->
     <section id="slider1">
       <h2 class="large-12 column f-16">POPULAR IN JEWELRY</h2>
         <div class="regular slider-buy">
           <div>
             <a href="">
-              <img src="assets/img/slider1-img1.png" alt="">
+              <img class="img0" src="assets/img/slider1-img1.png" alt="">
             </a>
             <div>
               <div class="text-left">$78</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img2.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img2.png" alt=""></a>
             <div>
               <div class="text-left">$48</div>
             </div>
           </div>
           <div>
             <a href="">
-              <img src="assets/img/slider1-img3.png" alt="">
+              <img class="img0" src="assets/img/slider1-img3.png" alt="">
             </a>
             <div>
               <div class="text-left">$55</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img4.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img4.png" alt=""></a>
             <div>
               <div class="text-left">$55</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img5.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img5.png" alt=""></a>
             <div>
               <div class="text-left">$59</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img6.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img6.png" alt=""></a>
               <div>
                 <div class="text-left">$99</div>
               </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img7.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img7.png" alt=""></a>
             <div>
               <div class="text-left">$59</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img8.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img8.png" alt=""></a>
             <div>
               <div class="text-left">$59</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img9.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img9.png" alt=""></a>
             <div>
               <div class="text-left">$139.99</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img10.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img10.png" alt=""></a>
            <div>
              <div class="text-left">$139.99</div>
            </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img11.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img11.png" alt=""></a>
             <div>
              <div class="text-left">$29.95</div>
             </div>
           </div>
           <div>
-           <a href=""><img src="assets/img/slider1-img12.png" alt=""></a>
+           <a href=""><img class="img0" src="assets/img/slider1-img12.png" alt=""></a>
             <div>
               <div class="text-left">$54</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img13.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img13.png" alt=""></a>
             <div>
               <div class="text-left">$24</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img14.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img14.png" alt=""></a>
             <div>
               <div class="text-left">$48</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img15.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img15.png" alt=""></a>
             <div>
               <div class="text-left">$72.50</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img16.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img16.png" alt=""></a>
             <div>
               <div class="text-left">$76</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img17.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img17.png" alt=""></a>
             <div>
               <div class="text-left">$22</div>
             </div>
             </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img18.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img18.png" alt=""></a>
             <div>
                 <div class="text-left">$32</div>
             </div>
           </div>
           <div>
-            <a href=""><img src="assets/img/slider1-img19.png" alt=""></a>
+            <a href=""><img class="img0" src="assets/img/slider1-img19.png" alt=""></a>
             <div>
               <div class="text-left">$26</div>
             </div>
