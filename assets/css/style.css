@@ -57,8 +57,9 @@ html, body {
 }
 
 .black{
-  color: #333;
+  color: #333 !important;
 }
+
 .gray{
   color: gray;
 }
@@ -387,7 +388,9 @@ h4{
   width: 40%;
   height: 40px;
 }
-
+.btn-white{
+  display: inline-block;
+}
 .btn-continue:hover{
   background-color: rgb(41, 37, 37);
 }
@@ -405,15 +408,44 @@ h4{
   width: 505px;
   height: 506px;
 }
+.bag img {
+  width: 17px;
+  height: 20px;
+  position: relative;
+  top: -5px;
+}
+.under_line{
+  text-decoration: underline;
+}
+.img-small{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.red{
+  color: #CF0218;
+}
+.bag {
+  width: 201px;
+  height: 42px;
+  font-size: 16px;
+  display: block;
+
+}
 .img-min-product{
   width: 70px;
   height: 70px;
 }
-.product-btn {
-    margin-top: 10px;
-    padding: 9px 23px;
-    background-color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #000;
+.display-btn{
+  display: inline-block;
+}
+.redes{
+  display: flex;
+  justify-content: space-between;
+}
+#producto{
+      padding: 0 100px;
+}
+.bdr-bootom{
+  border-bottom: solid 1px #EEEEEE;
 }
