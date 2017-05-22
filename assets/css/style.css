@@ -106,6 +106,9 @@ img[alt="logo"]{
   position: relative;
 }
 
+.search{
+  padding-left: 30px;
+}
 .fa-search{
   position: absolute;
   z-index: 20;
@@ -392,9 +395,36 @@ h4{
   background-color: rgb(41, 37, 37);
 }
 
+<<<<<<< HEAD
 /** elementos fixed bottom**/
 .yellow-winner{
   position: fixed;
   bottom: 20px;
   right: 35px;
+=======
+/*********************css galeria*************************/
+.img-producto{
+  height: 570px;
+}
+.grilla-img{
+  margin-bottom: 20px;
+}
+
+/********************clases detalle producto*************************/
+.detalle-producto{
+  width: 505px;
+  height: 506px;
+}
+.img-min-product{
+  width: 70px;
+  height: 70px;
+}
+.product-btn {
+    margin-top: 10px;
+    padding: 9px 23px;
+    background-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+>>>>>>> 0113233879f92859c4b0e146378810884af9a87f
 }
