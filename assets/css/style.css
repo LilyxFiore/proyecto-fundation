@@ -21,6 +21,10 @@
   font-size: 12px;
 }
 
+.f-16{
+  font-size: 16px;
+  font-weight: 600;
+}
 .white{
   color: white;
 }
@@ -135,4 +139,55 @@
 
 .p-10{
   padding: 10px;
+}
+
+/** footer **/
+footer a{
+  color: black;
+}
+
+footer a:hover{
+  color: grey;
+}
+
+.links li> a{
+  padding: 4px 0;
+}
+
+.links2{
+  margin: 0;
+}
+.links2 >li{
+  list-style: none;
+}
+
+.links2 li> a{
+  padding: 4px 0 4px 4px;
+}
+
+.menu.vertical.links2 li> a{
+  padding: 5px 0;
+}
+
+.border{
+  border: 1px solid #dbd9d9;
+}
+
+.pad{
+  padding: 20px 5px 16px 0;
+}
+
+.no-pad-a li>a{
+  padding: 20px 16px 20px 0;
+}
+
+.col-dep{
+  border-right: 1px solid #dbd9d9;
+  padding-right: 0;
+}
+
+h4{
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 19px;
 }
