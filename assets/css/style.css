@@ -64,7 +64,7 @@ html, body {
   color: gray;
 }
 
-/*HEADER*/
+/** header menu**/
 .head-up-bg{
   overflow: auto;
   background-color: black;
@@ -76,6 +76,7 @@ html, body {
   margin: 0 auto;
   overflow: auto;
 }
+
 .menu-md .happy-face{
   left: 20px;
   width: 300px;
@@ -103,8 +104,13 @@ img[alt="logo"]{
   height: 39px;
   width: 99px;
 }
+
 .search, .happy-face{
   position: relative;
+}
+
+.search{
+  padding-left: 30px;
 }
 
 .fa-search{
@@ -113,6 +119,7 @@ img[alt="logo"]{
   top: 10px;
   left: 5px;
 }
+
 .fa-smile-o{
   position: absolute;
   z-index: 20;
@@ -120,33 +127,45 @@ img[alt="logo"]{
   right: 0px;
   padding: 10px;
   border: 1px solid gray;
-
 }
 
 .menu-md .float-right a{
   color: #9b9b9b;
   font-size: 16px;
 }
+
 .menu-inf li{
   float: left;
   padding: 0 10px;
   list-style: none;
 }
+
 .menu-inf a{
   color: black;
   font-size: 1em;
   font-weight: bold;
 }
+
 ul.menu-inf {
    border-color: black;
 }
+
+/** section cover-gallery**/
+.img-producto{
+  height: 570px;
+}
+.grilla-img{
+  margin-bottom: 20px;
+}
+
+/** section slider **/
 .slider-buy {
-    width: 80%;
-    margin: 0px auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .slick-slide {
-  margin: 0px 0px;
+  margin: 0;
 }
 
 .slick-slide img {
@@ -159,49 +178,159 @@ section{
   width: 80%;
 }
 
-
 /*Slick hidden dots*/
 .slick-dots{
   display: none !important;
 }
+
 /* Arrows */
 .fa-angle-left,
-.fa-angle-right
-{
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: transparent;
+.fa-angle-right{
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .fa-angle-left:before,
-.fa-angle-right:before
-{
+.fa-angle-right:before{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fa-angle-left
-{
-    left: -25px;
+.fa-angle-left{
+  left: -25px;
 }
 
-
-.fa-angle-right
-{
-    right: -25px;
+.fa-angle-right{
+  right: -25px;
 }
 
-/** Style My Bag**/
+/** footer **/
+footer a{
+  color: black;
+}
+
+footer a:hover{
+  color: grey;
+}
+
+.menu-link{
+  list-style: none;
+  line-height: 20px;
+  margin: 0;
+}
+
+.menu-link li{
+  display: inline-flex;
+}
+
+.menu-link li > a {
+  font-size: 16px;
+  padding: 20px 10px 20px 0;
+}
+
+.links li> a{
+  padding: 4px 0;
+}
+
+.links2 li> a{
+  padding: 4px 0 4px 4px;
+}
+
+.menu.vertical.links2 li> a{
+  padding: 5px 0;
+}
+
+.border{
+  border: 1px solid #dbd9d9;
+}
+
+.pad{
+  padding: 0 5px 16px 0;
+}
+
+.no-pad-a li>a{
+  padding: 20px 16px 20px 0;
+}
+
+.col-dep{
+  border-right: 1px solid #dbd9d9;
+  padding-right: 0;
+}
+
+h4{
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.pad-footer-above{
+  padding-top: 20px;
+}
+
+.your-email{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 57%;
+  height: 40px;
+  margin: 0;
+}
+
+.your-email::-webkit-input-placeholder{
+  color: grey;
+}
+
+.btn-continue{
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0;
+  width: 40%;
+  height: 40px;
+}
+
+.btn-continue:hover{
+  background-color: rgb(41, 37, 37);
+}
+
+/** elemento fixed bottom**/
+.yellow-winner{
+  position: fixed;
+  bottom: 20px;
+  right: 35px;
+}
+
+/** Pagina Detalle producto (producto.html) **/
+.detalle-producto{
+  width: 505px;
+  height: 506px;
+}
+
+.img-min-product{
+  width: 70px;
+  height: 70px;
+}
+
+.product-btn {
+  margin-top: 10px;
+  padding: 9px 23px;
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+/** Style My Bag (producto.html)**/
 .my-bag {
   height: 100%;
   background-color: #fefefe;
@@ -214,8 +343,8 @@ section{
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -304,6 +433,7 @@ section{
 .p-10{
   padding: 10px;
 }
+
 
 /** footer **/
 footer a{
