@@ -1,3 +1,6 @@
+$(document).foundation()
+
+
 $(document).on('ready', function() {
        $(".regular").slick({
          dots: true,
