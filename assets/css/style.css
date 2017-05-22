@@ -13,6 +13,16 @@
   font-family: Neutra, Helvetica, sans-serif;
 }
 
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .f-24{
   font-size: 24px;
 }
@@ -48,6 +58,138 @@
 
 .black{
   color: #333;
+}
+
+/** section slider **/
+.slider {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 0px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+/*HEADER*/
+.head-up-bg{
+  overflow: auto;
+  background-color: black;
+  padding: 5px 0;
+}
+
+.menu-sup, .menu-md, .menu-inf{
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.float-left a, .float-right a{
+  color: white;
+  font-size: 13px;
+}
+
+.float-left a:hover, .float-right a:hover{
+  text-decoration: underline;
+}
+
+.float-right img{
+  width: 18px;
+  height: 18px;
+  margin-right: 0 8px ;
+}
+
+#header-middle{
+  margin:20px 0;
+}
+
+img[alt="logo"]{
+  height: 39px;
+  width: 99px;
+}
+
+/*vertical-align: middle;*/
+.search{
+  position: relative;
+}
+
+.fa-search{
+  position: absolute;
+  z-index: 20;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.menu-md .float-right a{
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+.fa-smile-o{
+  color: black;
+}
+
+.menu-inf a{
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+  margin-right: 60px;
+}
+
+ul.menu-inf {
+   border-color: black;
+}
+
+/*SLIDER 1*/
+section{
+  padding: 20px;
+}
+
+h2{
+	margin: 0px;
+	font-size: 16px;
+	width: 90%;
+  margin: 0px auto;
+}
+
+/* Arrows */
+.fa-angle-left,
+.fa-angle-right
+{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.fa-angle-left:before,
+.fa-angle-right:before
+{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-angle-left
+{
+    left: -25px;
+}
+
+
+.fa-angle-right
+{
+    right: -25px;
 }
 
 /** Style My Bag**/
