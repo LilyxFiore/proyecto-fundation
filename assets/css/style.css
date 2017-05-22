@@ -22,7 +22,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.slider {
+.slider-buy {
     width: 80%;
     margin: 0px auto;
 }
@@ -34,11 +34,10 @@ html, body {
 .slick-slide img {
   width: 100%;
 }
-/*Slick hidden dots
-ul{
+/*Slick hidden dots*/
+.slick-dots{
 	display: none !important;
-}*/
-
+}
 
 /*HEADER*/
 .head-up-bg{
@@ -51,7 +50,10 @@ ul{
   margin: 0 auto;
   overflow: auto;
 }
-
+.menu-md .happy-face{
+  left: 20px;
+  width: 300px;
+}
 .float-left a, .float-right a{
   color: white;
   font-size: 13px;
@@ -74,29 +76,38 @@ img[alt="logo"]{
   width: 99px;
   /*vertical-align: middle;*/
 }
-.search{
+.search, .happy-face{
   position: relative;
 }
 .fa-search{
   position: absolute;
   z-index: 20;
-  margin-top: 10px;
-  margin-left: 5px;
+  top: 10px;
+  left: 5px;
+}
+.fa-smile-o{
+  position: absolute;
+  z-index: 20;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  border: 1px solid gray;
+
 }
 .menu-md .float-right a{
   color: #9b9b9b;
   font-size: 16px;
 }
-.fa-smile-o{
-  color: black;
-
+.menu-inf li{
+  float: left;
+  padding: 0 10px;
+  list-style: none;
 }
 .menu-inf a{
   color: black;
   font-size: 1em;
   font-weight: 500;
- 
-  margin-right: 60px;
+  padding: 0 5px; 
 }
 ul.menu-inf {
    border-color: black;
@@ -110,12 +121,11 @@ section{
   padding: 20px;
 	
 }
-h2{
-	
+h2{	
 	margin: 0px;
 	font-size: 16px;
 	width: 90%;
-    margin: 0px auto;
+  margin: 0px auto;
 }
 .text-left{
 	text-align: left;
