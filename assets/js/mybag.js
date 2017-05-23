@@ -1,11 +1,25 @@
-var listImg = document.getElementsByClassName("img-product");
-var MyBagItem = document.getElementById("myBag").firstChild;
+var imgProducto = document.getElementsByClassName("detalle-producto")[0];
+imgProducto.src= localStorage.getItem("imgsrc");
 
-for(i = 0; i < listImg.length; i++){
-  listImg[i].addEventListener("click", function(){
-    createBagItem(this.src,i);
-  })
-}
+var MyBagBtn = document.getElementById("btnMyBag");
+var myBag = document.getElementById("myBag");
+
+
+
+var listImg = [];
+listImg.push(imgProducto.src);
+
+localStorage.setItem('myArray', listImg);
+
+
+
+var array = localStorage.getItem('myArray');
+
+MyBagBtn.addEventListener("click", function(){
+  for(i = 0; i < listImg.length; i++){
+      createBagItem(listImg[i],i);
+  }
+})
 
 function createBagItem(srcImg,i){
   var divItem = document.createElement("div");
@@ -19,7 +33,6 @@ function createBagItem(srcImg,i){
   var aTrash = document.createElement("a");
   var price = document.createElement("p");
 
-  var firstChild = myBag.getElementsByTagName('div')[0];
 
   divItem.setAttribute("class","my-bag-item");
   img.src=srcImg;
@@ -57,7 +70,7 @@ function createBagItem(srcImg,i){
 
   divName.appendChild(p);
   divItem.appendChild(itemPrice);
-  document.getElementById('myBag').insertBefore(divItem, firstChild);
+  document.getElementById('myBag').insertBefore(divItem, myBag.childNodes[1]);
 }
 
 function createOption(select, divName){

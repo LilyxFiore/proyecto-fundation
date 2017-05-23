@@ -122,7 +122,7 @@ img[alt="logo"]{
 
 .fa-smile-o{
   position: absolute;
-  z-index: 20;
+  z-index: 1;
   top: 0px;
   right: 0px;
   padding: 10px;
@@ -151,11 +151,16 @@ ul.menu-inf {
 }
 
 /** section cover-gallery**/
-.img-producto{
-  height: 570px;
+#coverGallery{
+  padding: 40px 0;
 }
-.grilla-img{
-  margin-bottom: 20px;
+
+.m-10{
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 639px){
+
 }
 
 /** section slider **/
@@ -331,6 +336,12 @@ h4{
 }
 
 /** Style My Bag (producto.html)**/
+.overflow-auto{
+  overflow: auto;
+  min-height: 150px;
+  height: calc(100vh - 280px);
+}
+
 .my-bag {
   height: 100%;
   background-color: #fefefe;
@@ -434,148 +445,62 @@ h4{
   padding: 10px;
 }
 
-
-/** footer **/
-footer a{
-  color: black;
-}
-
-footer a:hover{
-  color: grey;
-}
-
-.menu-link{
-  list-style: none;
-  line-height: 20px;
-  margin: 0;
-}
-
-.menu-link li{
-  display: inline-flex;
-}
-
-.menu-link li > a {
-  font-size: 16px;
-  padding: 20px 10px 20px 0;
-}
-
-.links li> a{
-  padding: 4px 0;
-}
-
-.links2 li> a{
-  padding: 4px 0 4px 4px;
-}
-
-.menu.vertical.links2 li> a{
-  padding: 5px 0;
-}
-
-.border{
-  border: 1px solid #dbd9d9;
-}
-
-.pad{
-  padding: 0 5px 16px 0;
-}
-
-.no-pad-a li>a{
-  padding: 20px 16px 20px 0;
-}
-
-.col-dep{
-  border-right: 1px solid #dbd9d9;
-  padding-right: 0;
-}
-
-h4{
-  margin: 20px 0;
-  font-weight: bold;
-  font-size: 19px;
-}
-
-.pad-footer-above{
-  padding-top: 20px;
-}
-
-.your-email{
-  display: inline-block;
-  box-sizing: border-box;
-  width: 57%;
-  height: 40px;
-  margin: 0;
-}
-
-.your-email::-webkit-input-placeholder{
-  color: grey;
-}
-
-.btn-continue{
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: black;
-  margin: 0;
-  width: 40%;
-  height: 40px;
-}
-.btn-white{
-  display: inline-block;
-}
-.btn-continue:hover{
-  background-color: rgb(41, 37, 37);
-}
-
-/*********************css galeria*************************/
-.img-producto{
-  height: 570px;
-}
-.grilla-img{
-  margin-bottom: 20px;
-}
-
-/********************clases detalle producto*************************/
+/** Detalle producto (producto.html)**/
 .detalle-producto{
   width: 505px;
   height: 506px;
 }
+
 .bag img {
   width: 17px;
   height: 20px;
   position: relative;
   top: -5px;
 }
+
 .under_line{
   text-decoration: underline;
 }
+
 .img-small{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 .red{
   color: #CF0218;
 }
+
 .bag {
   width: 201px;
   height: 42px;
   font-size: 16px;
   display: block;
-
 }
+
 .img-min-product{
   width: 70px;
   height: 70px;
 }
+
 .display-btn{
   display: inline-block;
 }
+
 .redes{
   display: flex;
   justify-content: space-between;
 }
+
 #producto{
-      padding: 0 100px;
+  padding: 60px 0;
 }
+
 .bdr-bootom{
   border-bottom: solid 1px #EEEEEE;
+}
+
+.pad-heart{
+  padding: 13px;
 }
