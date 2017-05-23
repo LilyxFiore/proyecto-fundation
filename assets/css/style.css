@@ -76,7 +76,6 @@ html, body {
   margin: 0 auto;
   overflow: auto;
 }
-
 .menu-md .happy-face{
   left: 20px;
   width: 300px;
@@ -104,13 +103,8 @@ img[alt="logo"]{
   height: 39px;
   width: 99px;
 }
-
 .search, .happy-face{
   position: relative;
-}
-
-.search{
-  padding-left: 30px;
 }
 
 .fa-search{
@@ -119,36 +113,104 @@ img[alt="logo"]{
   top: 10px;
   left: 5px;
 }
-
 .fa-smile-o{
   position: absolute;
-  z-index: 1;
+  z-index: 20;
   top: 0px;
   right: 0px;
   padding: 10px;
   border: 1px solid gray;
+
 }
 
 .menu-md .float-right a{
   color: #9b9b9b;
   font-size: 16px;
 }
-
 .menu-inf li{
   float: left;
   padding: 0 10px;
   list-style: none;
 }
-
 .menu-inf a{
   color: black;
   font-size: 1em;
   font-weight: bold;
 }
-
 ul.menu-inf {
    border-color: black;
 }
+/*HAMBURGER RESPONSIVE*/
+@media (max-width: 600px) and (min-width: 400px){
+  img[alt="logo-movil"]{
+    position: absolute;
+    left: 43%;
+    top:4px;
+  }
+}
+.move-right{
+  position: absolute;
+  right: 10px;
+  top:4px;
+}
+
+.icon-responsive{
+  color: #333;
+  
+}
+
+
+
+
+img[alt="logo-movil"]{
+  height: 25px;
+  width: 64px;
+}
+#movil-menu{
+  background: white;
+  padding-top: 25px;
+}
+
+.menu-left{
+  font-size: 17px;
+  position: absolute;
+  width: 100%;
+  padding:5px 15px;
+}
+
+.menu-left li{
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.menu-left li > a{
+  color: #333;
+  padding: 10px;
+}
+.new{
+  position: absolute;
+  top: 2px;
+  left: 80px;
+  background: #00a256;
+  color: white;
+  font-size: 9px;
+  width: 32px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  padding: 0 2px 0 3px;
+
+}
+.plus{
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+
+}
+
 
 /** section cover-gallery**/
 #coverGallery{
