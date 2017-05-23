@@ -208,9 +208,10 @@ img[alt="logo-movil"]{
   position: absolute;
   right: 5px;
   bottom: 5px;
-
 }
-
+.title-bar-bg{
+  background: #fff;
+}
 
 /** section cover-gallery**/
 #coverGallery{

@@ -2126,7 +2126,7 @@ select {
 
 .title-bar {
   padding: 0.5rem;
-  background: #fff;
+  background: #000;
   color: #fefefe;
   display: -ms-flexbox;
   display: flex;
