@@ -16,3 +16,7 @@ Para la realización de este se identifica las partes de las estructura del inde
 La segunda parte del proyecto es donde hacer click sobre la imagen de un producto, nos manda a una segunda página web del producto, donde se muestra el detalle de este como características, precio, entre otros.
 
 En la página de detalle de producto tendrá un botón "Add to bag" el cual mostrará una ventana donde se agregará los productos a comprar y el total de la compra.
+
+
+#### Organización:
+La manera en como designamos la realización del proyecto, asignación de tareas a los miembros del equipo yel poker planning se mostrarán en el siguiente enlace de trello: "https://trello.com/b/T2CDZkiB/proyecto-foundation"
